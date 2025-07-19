@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="snake" size="1.000000 0.767677" />
+    <ImageTarget name="monkey" size="1.000000 0.778524" />
+    <ImageTarget name="elephant" size="1.000000 0.781145" />
+    <ImageTarget name="eagle" size="1.000000 0.770000" />
+    <ImageTarget name="chicken" size="1.000000 0.771812" />
+    <ImageTarget name="rabbit" size="1.000000 0.783784" />
+  </Tracking>
+</QCARConfig>
