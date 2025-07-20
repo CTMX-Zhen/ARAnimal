@@ -44,3 +44,6 @@ Thumbs.db
 # You'll need to set this up separately:
 # git lfs install
 # git lfs track "*.psd" "*.png" "*.fbx" "*.mp4" "*.wav" "*.mp3"
+
+com.ptc.vuforia.engine-11.3.4.tgz
+ARAnimal.apk

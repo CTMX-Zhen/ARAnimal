@@ -55,6 +55,9 @@ public class ModelTouchInteractor : MonoBehaviour
                 Vector2 delta = t.deltaPosition;
                 Vector3 move = new Vector3(delta.x, delta.y, 0f) * dragSpeed;
                 transform.Translate(move, Space.World);
+
+                // 🌟 限制在相机视野内
+                ClampToCameraView();
             }
             return;
         }
@@ -108,5 +111,21 @@ public class ModelTouchInteractor : MonoBehaviour
             parent = parent.parent;
         }
         return false;
+    }
+
+    void ClampToCameraView()
+    {
+        Camera cam = Camera.main;
+        Vector3 screenPos = cam.WorldToViewportPoint(transform.position);
+
+        // 限制在 [0,1] 视口范围内
+        screenPos.x = Mathf.Clamp01(screenPos.x);
+        screenPos.y = Mathf.Clamp01(screenPos.y);
+
+        // 保持 Z 不变（否则可能消失）
+        Vector3 clampedWorldPos = cam.ViewportToWorldPoint(screenPos);
+        clampedWorldPos.z = transform.position.z;
+
+        transform.position = clampedWorldPos;
     }
 }
