@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 127278
+  controlID: 41
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 127279
+  controlID: 42
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 127280
+  controlID: 43
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: SimulatorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -218,13 +218,13 @@ MonoBehaviour:
     y: 0
     width: 788.80005
     height: 548
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
-  m_Selected: 0
+  m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -318,8 +318,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -164, y: -26.399994}
+      snapOffset: {x: -164, y: -26.399994}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -578,7 +578,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 48, y: 48}
+      snapOffset: {x: 48, y: 10.399963}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
@@ -623,9 +623,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 1, z: -99.1}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 0, y: 1, z: -99.1}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -671,13 +671,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_Size:
-    m_Target: 0.9622505
+    m_Target: 3.2890337
     speed: 2
-    m_Value: 0.9622505
+    m_Value: 3.2890337
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -753,7 +753,7 @@ MonoBehaviour:
   m_UseMipMap: 0
   m_SimulatorState:
     controlPanelVisible: 0
-    controlPanelWidth: NaN
+    controlPanelWidth: 0
     controlPanelFoldoutKeys:
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
     controlPanelFoldoutValues: 00
@@ -763,8 +763,8 @@ MonoBehaviour:
     pluginStates:
     - '{}'
     - '{}'
-    scale: 10
-    fitToScreenEnabled: 1
+    scale: 29
+    fitToScreenEnabled: 0
     rotationDegree: 270
     highlightSafeAreaEnabled: 0
     friendlyName: Apple iPad Mini 4
@@ -811,18 +811,18 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9c4af9ffae4bf9ffe451f9ff5c52f9ffe853f9ff1855f9ff6c55f9ffa25ef9ffd25ff9ff2660f9ff226bf9ff526cf9ffa66cf9ff667cf9ff787df9ffae83f9ff2684f9ffb285f9ffe286f9ff3687f9ff48a1f9ff5aa2f9ff90a8f9ff08a9f9ff94aaf9ffc4abf9ff18acf9ff32c8f9ff5ec9f9ffaec9f9ffe8d8f9fffad9f9ff30e0f9ffa8e0f9ff34e2f9ff64e3f9ffb8e3f9fffef4f9ff10f6f9ff44fcf9ffbcfcf9ff46fef9ff76fff9ffcafff9ff161afaff441afaffd625faffd826faff082dfaff802dfaff082ffaff3630faff8a30faff065efaff105efaff1a5efaff225efaff305efaff365efaff425efaff4a5efaff5c5efaff625efaff6c5efaff725efaff7a5efaff825efaff905efaff965efaffa05efaffb25efaffba5efaffc25efaffcc5efaffd25efaffda5efaffe65efafff25efafffa5efaff025ffaff0c5ffaff125ffaff1c5ffaff225ffaff245ffaff6a71faff9073faff5e7efaff607ffaff8c85faff0086faffa286faffcc87faff1c88faff7898faff0409fbff0c09fbff1609fbff2809fbff3009fbff3809fbff4009fbff4a09fbff5009fbff5c09fbff6409fbff6e09fbff7409fbff7e09fbff8409fbff8c09fbff9409fbff9c09fbffa409fbffae09fbffb409fbffbe09fbffc409fbffcc09fbffd609fbffe009fbffea09fbfff009fbff000afbff0e0afbff140afbff1c0afbff220afbff122efbffba30fbff623dfbff0e42fbff7465fbff7a65fbff3466fbff8872fbff027afbff389efbff8aadfbff12b1fbffd0c1fbff34c7fbff54dafbff42e5fbff9cfafbfffafafbff04fbfbff26fbfbff120efcff4011fcffbc24fcff5438fcff6241fcff8a52fcff8c57fcff9657fcffe857fcff047cfcff7280fcff9880fcffe68ffcff0c96fcff1696fcff2896fcff1cbcfcff6abdfcffb6c2fcff14c3fcff04c9fcff0ec9fcff60c9fcff2ef0fcffc0f3fcffcaf3fcffdcf4fcff7c07fdffb607fdffc007fdffe207fdff0c17fdff1617fdffa417fdfffe2cfdff082dfdff162efdff2a44fdff0246fdff0457fdfffa71fdff0872fdff1272fdff1c72fdff2e72fdff3872fdff3e72fdff4672fdff5072fdff5672fdff5e72fdff6672fdff7272fdff7a72fdff8272fdff8e72fdff9672fdffa072fdffa672fdffb072fdffb672fdffc072fdffc672fdffd072fdffd672fdffde72fdffea72fdfff472fdfffa72fdff0673fdff0e73fdff1673fdff1873fdfff285fdff2ea5fdff3aa5fdff42a5fdff4aa5fdff52a5fdff5aa5fdff62a5fdff6ca5fdff72a5fdff7ea5fdff86a5fdff92a5fdff9aa5fdffa4a5fdffaaa5fdffb6a5fdffc0a5fdffc6a5fdffcea5fdffd8a5fdffdea5fdffe8a5fdfff2a5fdfffca5fdff02a6fdff0aa6fdff14a6fdff26a6fdff30a6fdff36a6fdff40a6fdff46a6fdff48a6fdffa6affdffbeaffdff8ab0fdff98b0fdff2eb9fdffd8bcfdffb2cafdffdacffdff50d9fdff96dafdff54e0fdff5ae0fdff68e0fdff7af0fdff7615feff7c15feff8415feff8c15feff9415feff9c15feffa815feffb415feffd815feffe215feffe815fefff015fefffa15feff0016feff0e16feff1416feff1c16feff2416feff2e16feff3416feff3e16feff4416feff4e16feff5416feff6016feff6816feff7016feff7a16feff8416feff8616feff2431feffa83efeffc03efeff343ffeff603ffeff9c3ffeffa63ffeff2a4efeffe051feff365ffeff0667feff1067feff3667feffac83feff6890feff6691feff9297feff0e98feff9a99feffcc9afeff249bfefff49efefffa9efeff069ffeff129ffeff1c9ffeff269ffeff349ffeff3a9ffeff429ffeff4a9ffeff5a9ffeff629ffeff6a9ffeff729ffeff7a9ffeff849ffeff8a9ffeff949ffeff9a9ffeffa89ffeffae9ffeffba9ffeffc49ffeffca9ffeffd29ffeffda9ffeffe29ffeffec9ffefff29ffeff10a0feffc0b8feffccd5feffd6d5feffded5feffead5fefff2d5fefffed5feff06d6feff0ed6feff16d6feff24d6feff2ad6feff32d6feff3ad6feff44d6feff4ad6feff54d6feff5ad6feff62d6feff70d6feff76d6feff80d6feff86d6feffb2d6feffbcd6feffc2d6feffcad6feffd4d6feffdad6feffe6d6feffe8d6feff9ce0feffa6e0feff9ce1feffe8f0feff14f8feff50f8feffc2f8feffccf8feffeef8feff84fefeff241affff901fffff5421ffff2a31ffff8034ffffa238ffff3048ffff8673ffff9073ffff9673ffff9e73ffffaa73ffffb473ffffba73ffffc473ffffca73ffffd473fffff273fffffa73ffff0274ffff0a74ffff1c74ffff2674ffff2e74ffff3674ffff4274ffff4c74ffff5274ffff5a74ffff6474ffff6a74ffff7674ffff8474ffff8a74ffff9274ffff9c74ffffa274ffffa474ffff747effff7a7effffcc7effffd67effff087ffffffa87fffff88dfffffe8dffff068effff0e8effff168effff228effff2e8effff388effff3e8effff488effff4e8effff5a8effff648effff6a8effff8e8effff988effffa28effffac8effffb28effffba8effffc88effffce8effffd68effffde8effffe68efffffa8effff028fffff0c8fffff128fffff148fffffa0baffff88e0ffff86e1fffface7ffff20e8ffffa6e9ffffd0eaffff20ebffff26fbffffbc700000d6700000f0700000c6710000d2710000167200003c720000d6940000e894000016950000369500003a9500007a9600008296000086960000b2960000ce960000f0960000729700004aa4000064a400007ea4000098a50000bea5000036aa000050aa000084ab0000daab0000d0ac0000e4ac000028ad00004ead0000deb90000f8b9000096c10000b0c100005ec9000078c90000aaca000042cf00005ccf00008ed00000e4d00000fed0000030d2000056d200006ad8000084d80000b6d90000dcd900002eee000048ee00007aef0000a0ef0000c0f5000046fd000060fd0000b8fe0000cc040100e604010000050100180601003e060100b40a0100ce0a0100000c01006410010038110100621a01007c1a0100a21b0100ae1b0100101c01002a1c0100441c0100fc1c0100001d0100041d0100181d01002c1d0100421d01005c1d0100821d0100f4230100102401002c24010004250100082501000c250100242501003a250100542501006425010070250100982501009e300100ba300100763101001a320100e433010000340100bc340100603501002e3701004a37010006380100aa380100743a0100903a01004c3b0100f03b0100f03e01000c3f0100c83f01006c40010002410100de410100e2410100c4490100e04901009c4a0100404b010088500100645101006c5d0100885d0100e85e0100aa670100c66701001a690100266901004e6901006e7401008a740100a27c0100147e0100207e0100f2870100c4a0010060a401006ca50100caa5010050ae01005caf0100baaf0100e2af01007cbe010056bf01005abf01005ebf010080bf010096bf0100b0bf0100ccbf0100f4bf0100b4dd0100d6dd0100bade0100bede0100cede0100e2de0100fade010014df010030df010058df01001e0002003a010200f61e0200fa1e0200241f0200281f02002a1f0200301f0200441f0200461f02006e1f02008c1f02008e1f0200b61f020002200200142002007a2002007c200200a6200200ba200200be200200e2200200ea200200ee200200f2200200f6200200fa2002000e210200102102002a2102002c2102002e210200302102004c2102004e21020050210200782102008e2102009e210200cc210200d0210200ea210200ec2102000422020006220200063002003a3002007830020022310200ec310200f4310200fc31020000320200363202003a3202005a320200823202003441020072410200e0420200e8420200f0420200f4420200284302002c4302004a43020072430200
+      m_ExpandedIDs: fef4feffb6fffeffb800ffffee06ffff6207ffffee08ffff1c0affff6c0affffc691ffff049effff169fffff4ea5ffffc2a5ffff54a7ffff82a8ffffd2a8ffff86b2ffffb8b3ffff0cb4ffff0ab6ffffacbbffffead5ffff12d9ffff84dfffff34e3ffff6af2ffff1afbfffff07700000c7800003279000054840000a0840000d28400002a850000e4870000fc8700007e880000f888000092920000d6a000004ca10000e2a2000098bd000010be0000a6bf0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Rabbit
-        m_OriginalName: Rabbit
+        m_Name: RenderCanvas
+        m_OriginalName: RenderCanvas
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 143404
+        m_UserData: 48656
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -929,7 +929,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Display2/FoodJudgeSystem
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -937,16 +937,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 45
   m_LastFolders:
-  - Assets/Scripts/Display2/FoodJudgeSystem
+  - Assets/Scenes
   m_LastFoldersGridSize: 45
   m_LastProjectPath: C:\Users\User\ARAnimal
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 554.2}
-    m_SelectedIDs: 2eb20100
-    m_LastClickedID: 111150
-    m_ExpandedIDs: 00000000487600004a7600004c7600004e7600005076000052760000547600005676000058760000ffffff7f
+    scrollPos: {x: 0, y: 442.2}
+    m_SelectedIDs: e27c0000
+    m_LastClickedID: 31970
+    m_ExpandedIDs: 00000000567c0000587c00005a7c00005c7c00005e7c0000607c0000627c0000647c0000667c0000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -974,7 +974,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000487600004a7600004c7600004e7600005076000052760000547600005676000058760000ffffff7f
+    m_ExpandedIDs: 00000000567c0000587c00005a7c00005c7c00005e7c0000607c0000627c0000647c0000667c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

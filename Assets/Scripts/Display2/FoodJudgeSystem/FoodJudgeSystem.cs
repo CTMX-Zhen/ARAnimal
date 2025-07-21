@@ -17,14 +17,10 @@ public class FoodJudgeSystem : MonoBehaviour
     private Dictionary<string, string> animalDiets;
     private HashSet<string> meatFoods;
     private HashSet<string> vegeFoods;
-    private FoodDebugPanel debugPanel;
-
 
     void Start()
     {
         mainCam = Camera.main;
-
-        debugPanel = FindObjectOfType<FoodDebugPanel>();
 
         animalDiets = new Dictionary<string, string>
         {
@@ -61,13 +57,6 @@ public class FoodJudgeSystem : MonoBehaviour
                 JudgeFood(interactor);
                 break;
             }
-            if (debugPanel != null)
-            {
-                debugPanel.currentFood = interactor.name.ToLower();
-                debugPanel.inCenter = (dx < centerThreshold && dy < centerThreshold);
-                debugPanel.judged = false;
-                debugPanel.resetDone = false;
-            }
         }
     }
 
@@ -98,15 +87,6 @@ public class FoodJudgeSystem : MonoBehaviour
 
         PlaySound(isCorrect, isMeat, isVege, dietType);
         food.SendMessage("ResetModel", SendMessageOptions.DontRequireReceiver);
-
-        if (debugPanel != null)
-        {
-            debugPanel.closestAnimal = animalName;
-            debugPanel.judged = true;
-
-            string status = isCorrect ? "CORRECT" : "WRONG";
-            debugPanel.LogEvent(status);
-        }
     }
 
 

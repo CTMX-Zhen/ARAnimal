@@ -116,16 +116,14 @@ public class ModelTouchInteractor : MonoBehaviour
     void ClampToCameraView()
     {
         Camera cam = Camera.main;
-        Vector3 screenPos = cam.WorldToViewportPoint(transform.position);
+        Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
 
-        // 限制在 [0,1] 视口范围内
-        screenPos.x = Mathf.Clamp01(screenPos.x);
-        screenPos.y = Mathf.Clamp01(screenPos.y);
+        float padding = 100f; // 可选：避免贴边太紧
 
-        // 保持 Z 不变（否则可能消失）
-        Vector3 clampedWorldPos = cam.ViewportToWorldPoint(screenPos);
-        clampedWorldPos.z = transform.position.z;
+        screenPos.x = Mathf.Clamp(screenPos.x, padding, Screen.width - padding);
+        screenPos.y = Mathf.Clamp(screenPos.y, padding, Screen.height - padding);
 
+        Vector3 clampedWorldPos = cam.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, screenPos.z));
         transform.position = clampedWorldPos;
     }
 }
