@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class AnimalCameraAligner : MonoBehaviour
 {
-    public float distance = 2.5f;  // 相机距离
-    public float height = 1.0f;    // 相机高度偏移
+    public float distance = 1f;  // 相机距离
+    public float height = 1f;    // 相机高度偏移
     public Vector3 lookOffset = Vector3.up * 0.5f; // 看向动物中间
 
     void Start()

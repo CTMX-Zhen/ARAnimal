@@ -15,7 +15,6 @@ public class FoodTouchInteractor : MonoBehaviour
     private float doubleTapThreshold = 0.3f;
     private Quaternion originalLocalRotation;
 
-
     void Start()
     {
         originalLocalPosition = transform.localPosition;

@@ -14,14 +14,15 @@ public class ModelTouchInteractor : MonoBehaviour
 
     private float lastTapTime = 0f;
     private float doubleTapThreshold = 0.3f;
-
-    private Vector3 originalPosition;
-    private Vector3 originalScale;
+    private Vector3 originalLocalPosition;
+    private Quaternion originalLocalRotation;
+    private Vector3 originalLocalScale;
 
     void Start()
     {
-        originalPosition = transform.position;
-        originalScale = transform.localScale;
+        originalLocalPosition = transform.localPosition;
+        originalLocalRotation = transform.localRotation;
+        originalLocalScale = transform.localScale;
     }
 
     void Update()
@@ -94,9 +95,9 @@ public class ModelTouchInteractor : MonoBehaviour
 
     void ResetModel()
     {
-        transform.position = originalPosition;
-        transform.localScale = originalScale;
-        transform.rotation = Quaternion.identity;
+        transform.localPosition = originalLocalPosition;
+        transform.localRotation = originalLocalRotation;
+        transform.localScale = originalLocalScale;
         Debug.Log("🔄 模型已重置为原始状态");
     }
 
